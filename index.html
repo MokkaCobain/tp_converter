@@ -13,26 +13,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <div id="container" class="w-50 mx-auto mt-2">
-        <div class="en-tete">
+    <!--Div principale-->
+    <div id="container" class="w-90 mx-auto">
+
+        <!--Titre-->
+        <div class="en-tete text-lg-center">
             <h1>Projet</h1>
             <h2>Celsius - Fahrenheit</h2>
         </div>
-        <div class="converter mt-5">
+
+        <!--Div du converter-->
+        <div id="content" class="mt-5 w-50 mx-auto">
             <h3>Converter form</h3>
-            <form name="converter" class="row gy-2 gx-3 align-items-center w-25">
-                <div class="col-auto">
-                    <label for="temperature">Valeur en °C</label>
-                    <input id="temperature" name="temperature" type="number" placeholder="Entrez la température en °C">
+            <!--Début formulaire-->
+            <form name="converter" class="row gy-2 gx-3">
+
+                <div class="row gy-2 gx-3 justify-content-between">
+                    <label for="temperature" class="w-auto">Valeur en °C</label>
+                    <input id="temperature" name="temperature" type="text" placeholder="Entrez la température en °C">
                 </div>
+
+                <hr>
+                
                 <div class="row gy-2 gx-3 d-flex justify-content-between">
                     <button type="submit" value="Submit" class="w-auto">Valider</button>
                     <button type="reset" value="Reset" class="w-auto">Reset</button>
                 </div>
+
             </form>
+            <!--Fin formulaire-->
         </div>
     </div>
+    <!--Fin Div principale-->
     <script src="assets/js/main.js"></script>
 </body>
 </html>

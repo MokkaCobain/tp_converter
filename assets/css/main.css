@@ -1,0 +1,19 @@
+/* RESET */
+
+
+
+
+/* DivRésultat */
+#reponse {
+    color: white;
+    text-align: center;
+}
+
+.mauvaise-saisie {
+    background-color: red;
+
+}
+
+.bonne-saisie {
+    background-color: green;
+}
